@@ -59,11 +59,11 @@ If you would like to add sponsors to your episodes, but not have them displayed 
 == Changelog ==
 
 = 1.0 =
-* 2016-00-00
-* Initial release
+* 2016-08-03
+* Initial release (fork of Seriously Simple Speakers)
 
 == Upgrade Notice ==
 
 = 1.0 =
-* 2016-00-00
-* Initial release
+* 2016-08-03
+* Initial release (fork of Seriously Simple Speakers)
