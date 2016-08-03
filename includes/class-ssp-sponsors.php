@@ -82,9 +82,6 @@ class SSP_Sponsors {
 		$this->file = $file;
 		$this->dir = dirname( $this->file );
 
-		// Setup taxonomy details
-		add_action( 'init', array( $this, 'setup_tax' ) );
-
 		// Register functions to run on plugin activation
 		register_activation_hook( $this->file, array( $this, 'install' ) );
 
@@ -97,12 +94,6 @@ class SSP_Sponsors {
 		// Handle localisation
 		add_action( 'plugins_loaded', array( $this, 'load_localisation' ) );
 	} // End __construct ()
-
-	public function setup_tax () {
-		$this->tax = 'sponsor';
-		$this->single = apply_filters( 'ssp_sponsors_single_label', __( 'Sponsor', 'seriously-simple-sponsors' ) );
-		$this->plural = apply_filters( 'ssp_sponsors_plural_label', __( 'Sponsors', 'seriously-simple-sponsors' ) );
-	}
 
 	public function display_sponsors ( $meta = array(), $episode_id = 0, $context = '' ) {
 
@@ -155,6 +146,10 @@ class SSP_Sponsors {
 	}
 
 	public function register_taxonomy() {
+
+        $this->tax = 'sponsor';
+        $this->single = apply_filters( 'ssp_sponsors_single_label', __( 'Sponsor', 'seriously-simple-sponsors' ) );
+        $this->plural = apply_filters( 'ssp_sponsors_plural_label', __( 'Sponsors', 'seriously-simple-sponsors' ) );
 
 		// Create taxonomy labels
 		$labels = array(
