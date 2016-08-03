@@ -7,11 +7,13 @@ Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Add speakers/guests to your Seriously Simple Podcasting episodes.
+Add sponsors to your Seriously Simple Podcasting episodes.
 
 == Description ==
 
 > This plugin is an add-on for [Seriously Simple Podcasting](https://www.seriouslysimplepodcasting.com/) and requires at least **v1.14** of Seriously Simple Podcasting in order to work.
+
+Does your podcast have a number of different sponsors? Or maybe a different sponsor each week? Perhaps you have unique sponsor for each episode? If any of those options describe your podcast then this is the add-on for you!
 
 Seriously Simple Sponsors allows you to add one or more sponsors to each of your episodes - the sponsors are setup as a new taxonomy, making them easily searchable as well as giving them their own archive pages out of the box.
 
